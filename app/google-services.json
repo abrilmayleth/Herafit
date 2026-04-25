@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "44377081429",
+    "firebase_url": "https://herafit-8762e-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "herafit-8762e",
+    "storage_bucket": "herafit-8762e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:44377081429:android:7f7522c939976f8bfaf6dc",
+        "android_client_info": {
+          "package_name": "com.example.herafit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfRhtAhQh5CK_vmsK8YCGSUD6kEfLxv3Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
