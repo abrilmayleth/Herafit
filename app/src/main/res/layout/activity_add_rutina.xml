@@ -1,104 +1,139 @@
-
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFEE">
 
-    <!-- Contenedor centrado -->
+    <!-- flechita -->
+    <ImageView
+        android:id="@+id/backBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@android:drawable/ic_menu_revert"
+        android:contentDescription="Volver"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="#F0037F" />
+
     <ImageView
         android:id="@+id/appLogo"
-        android:layout_width="163dp"
-        android:layout_height="129dp"
-        android:layout_marginTop="44dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
         android:contentDescription="Herafit App Logo"
         android:src="@drawable/herafitlohoh_copia"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed" />
+        app:layout_constraintVertical_chainStyle="packed"/>
 
+    <!-- contenedor centrado -->
     <LinearLayout
         android:id="@+id/container"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
         android:orientation="vertical"
         android:padding="24dp"
-        android:gravity="center_horizontal"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toTopOf="parent">
 
-        <!-- Título -->
+        <!-- nueva rutina -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="serif"
             android:text="Nueva Rutina"
+            android:textColor="#F0037F"
             android:textSize="22sp"
-            android:textStyle="bold"
-            android:textColor="#C2185B"
-            android:layout_marginBottom="24dp" />
+            android:textStyle="bold" />
 
-        <!-- Nombre de la rutina -->
+        <!-- nombre de la rutina -->
         <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
+            android:fontFamily="serif"
             android:hint="Nombre de la rutina"
             app:boxBackgroundMode="outline"
-            app:boxStrokeColor="#C2185B"
-            app:boxCornerRadiusTopStart="16dp"
-            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusBottomEnd="16dp"
             app:boxCornerRadiusBottomStart="16dp"
-            app:boxCornerRadiusBottomEnd="16dp">
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusTopStart="16dp"
+            app:boxStrokeColor="#C2185B">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/nombre"
-                android:layout_width="match_parent"
+                android:layout_width="300dp"
+                android:fontFamily="serif"
                 android:layout_height="wrap_content"
                 android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- Espacio -->
+        <!-- espacio -->
         <View
             android:layout_width="match_parent"
             android:layout_height="16dp" />
 
         <!-- Descripción -->
         <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
+            android:fontFamily="serif"
             android:hint="Descripción"
             app:boxBackgroundMode="outline"
-            app:boxStrokeColor="#C2185B"
-            app:boxCornerRadiusTopStart="16dp"
-            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusBottomEnd="16dp"
             app:boxCornerRadiusBottomStart="16dp"
-            app:boxCornerRadiusBottomEnd="16dp">
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusTopStart="16dp"
+            app:boxStrokeColor="#C2185B">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/descripcion"
-                android:layout_width="match_parent"
+                android:layout_width="300dp"
+                android:fontFamily="serif"
                 android:layout_height="120dp"
                 android:gravity="top"
                 android:inputType="textMultiLine" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- Botón Guardar -->
+        <!-- boton guardar -->
         <Button
             android:id="@+id/saveBtn"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="56dp"
             android:layout_marginTop="24dp"
-            android:text="Guardar rutina"
+            android:backgroundTint="#F0037F"
+            android:fontFamily="serif"
+            android:text="Guardar Rutina"
             android:textAllCaps="false"
-            android:textSize="16sp"
-            android:textColor="#FFFFFF"
-            android:backgroundTint="#C2185B" />
+            android:textColor="#F6CDE2"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#F6CDE2"
+            android:text="Cancelar"
+            android:textAllCaps="false"
+            android:textColor="#F0037F"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/saveBtn" />
 
     </LinearLayout>
+
+    <androidx.constraintlayout.helper.widget.Layer android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

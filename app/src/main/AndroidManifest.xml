@@ -11,15 +11,36 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Herafit">
+
+        <!-- Bienvenida -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Login -->
+        <activity android:name=".LoginActivity" />
+        <!-- Registro -->
+        <activity android:name=".RegisterActivity" />
+        <!-- Perfil -->
+        <activity android:name=".PerfilActivity" />
+        <!-- Editar Perfil -->
+        <activity android:name=".EditPerfilActivity" />
+        <!-- Lista de rutinas -->
+        <activity android:name=".RutinasActivity" />
+        <!-- Crear rutina -->
+        <activity android:name=".AddRutinaActivity" />
+        <!-- Editar rutina -->
+        <activity android:name=".EditRutinaActivity" />
+        <!-- Eliminar -->
+        <activity android:name=".DeleteRutinaActivity" />
+
+
+
     </application>
 
 </manifest>

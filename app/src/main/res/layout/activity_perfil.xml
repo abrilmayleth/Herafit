@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFEE"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- logo -->
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/herafitlogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <!-- Nombre de usuaria-->
+
+    <TextView
+        android:id="@+id/nombreUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:fontFamily="serif"
+        android:text="Nombre"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/perfilLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appLogo"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <!-- perfil -->
+    <TextView
+        android:id="@+id/perfilLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="serif"
+        android:text="Perfil"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombreUsuario" />
+    <!-- bombon, burbuja y bellota -->
+    <LinearLayout
+        android:id="@+id/bubblesContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/perfilLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp">
+
+        <!-- peso -->
+
+        <TextView
+            android:id="@+id/pesoBubble"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bubble_bg"
+            android:gravity="center"
+            android:text="Peso"
+            android:fontFamily="serif"
+            android:layout_margin="15dp"/>
+
+        <!-- altura -->
+        <TextView
+            android:id="@+id/alturaBubble"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bubble_bg"
+            android:gravity="center"
+            android:text="Altura"
+            android:fontFamily="serif"
+            android:layout_margin="15dp"/>
+
+        <!-- edad -->
+        <TextView
+            android:id="@+id/edadBubble"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bubble_bg"
+            android:gravity="center"
+            android:text="Edad"
+            android:fontFamily="serif"
+            android:layout_margin="15dp"/>
+    </LinearLayout>
+
+    <!-- boton editar -->
+    <Button
+        android:id="@+id/editBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modificar datos"
+        android:textColor="#F7C1E2"
+        android:backgroundTint="#E6098D"
+        android:fontFamily="serif"
+        app:layout_constraintTop_toBottomOf="@id/bubblesContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp"/>
+
+    <!-- rutinas -->
+
+    <Button
+        android:id="@+id/rutinasLabel"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#E6098D"
+        android:fontFamily="serif"
+        android:text="Rutinas"
+        android:textColor="#F7C1E2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editBtn" />
+
+    <!-- salir de la app -->
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Salir"
+        android:textColor="#F7C1E2"
+        android:backgroundTint="#E6098D"
+        android:fontFamily="serif"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/rutinasLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
