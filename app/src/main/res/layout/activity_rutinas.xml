@@ -33,7 +33,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="50dp"/>
 
-    <!-- BOTÓN AÑADIR -->
+    <!-- boton añadir -->
     <Button
         android:id="@+id/addBtn"
         android:layout_width="200dp"
