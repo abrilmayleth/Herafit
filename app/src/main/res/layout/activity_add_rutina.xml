@@ -96,13 +96,13 @@
             app:boxCornerRadiusTopStart="16dp"
             app:boxStrokeColor="#C2185B">
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/descripcion"
-                android:layout_width="300dp"
-                android:fontFamily="serif"
-                android:layout_height="120dp"
-                android:gravity="top"
-                android:inputType="textMultiLine" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/descripcion"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:minHeight="120dp"
+            android:gravity="top" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- boton guardar -->
@@ -133,7 +133,5 @@
 
     </LinearLayout>
 
-    <androidx.constraintlayout.helper.widget.Layer android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

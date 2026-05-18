@@ -39,8 +39,6 @@
         <!-- Eliminar -->
         <activity android:name=".DeleteRutinaActivity" />
 
-
-
     </application>
 
 </manifest>
